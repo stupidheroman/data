@@ -1,0 +1,32 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">DATA</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#if isIndex}}
+            <li class="active"><a href="/">Bosh sahifa</a></li>
+            {{else}}
+            <li><a href="/">Bosh sahifa</a></li>
+            {{/if}}
+
+            {{#if isNews}}
+                <li class="active"><a href="/news">Yangiliklar</a></li>
+            {{else}}
+                <li><a href="/news">Yangiliklar</a></li>
+            {{/if}}
+
+            {{#if isCourses}}
+                <li class="active"><a href="/courses">Kurslar</a></li>
+            {{else}}
+                <li><a href="/courses">Kurslar</a></li>
+            {{/if}}
+
+            {{#if isAdd}}
+                <li class="active"><a href="/add">Kurs qo'shish</a></li>
+            {{else}}
+                <li><a href="/add">Kurs qo'shish</a></li>
+            {{/if}}
+
+        </ul>
+    </div>
+</nav>
