@@ -1,0 +1,15 @@
+<h1>O'quvchilar</h1>
+<ul class="collection">
+    {{#if courses.length}}
+    {{#each courses}}
+        <li class="collection-item avatar">
+            <img src="{{image}}" alt="" class="circle">
+            <span class="title"><b>{{fullname}}</b></span>
+            <p>Yoshi: {{age}}</p>
+            <p>Kasbi: {{job}}</p>
+        </li>
+    {{/each}}
+    {{else}}
+        <h1>Not Found</h1>
+    {{/if}}
+</ul>

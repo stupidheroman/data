@@ -9,10 +9,16 @@
             <li><a href="/">Bosh sahifa</a></li>
             {{/if}}
 
-            {{#if isNews}}
-                <li class="active"><a href="/news">Yangiliklar</a></li>
+            {{#if isStudents}}
+                <li class="active"><a href="/students">O'quvchilar</a></li>
             {{else}}
-                <li><a href="/news">Yangiliklar</a></li>
+                <li><a href="/students">O'quvchilar</a></li>
+            {{/if}}
+
+            {{#if isAddStudent}}
+                <li class="active"><a href="/addStudent">O'quvchi qo'shish</a></li>
+            {{else}}
+                <li><a href="/addStudent">O'quvchi qo'shish</a></li>
             {{/if}}
 
             {{#if isCourses}}
